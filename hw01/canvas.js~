@@ -1,0 +1,19 @@
+var canvas = document.getElementById("canvas");
+var context = canvas.getContext("2d");
+
+context.fillRect(50, 100, 150, 200);
+
+var clearbutton = document.getElementById("clear");
+var clear = function(e) {
+    e.preventDefault();
+    context.clearRect(0, 0, 500, 500);
+}
+
+var drawDot = function(e) {
+    e.preventDefault();
+    context.beginPath();
+    context.arc(e.offsetX, e.offsetY, 10, 0 , 2 * Math.PI);
+    context.fill();
+}
+clearbutton.addEventListener("click", clear);
+canvas.addEventListener("click", drawDot);
