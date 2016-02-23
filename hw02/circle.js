@@ -7,7 +7,7 @@ var startbutton = document.getElementById("start");
 
 var radius = 1;
 var run = function(e) {
-    requestAnimationFrame(run);    
+    window.requestAnimationFrame(run);    
     context.clearRect(0, 0, 500, 500);
     console.log("test");
     context.clearRect(0, 0, 500, 500);
