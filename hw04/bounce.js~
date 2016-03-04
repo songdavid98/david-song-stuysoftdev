@@ -1,0 +1,5 @@
+console.log("hello david");
+
+var startbutton = document.getElementById("start");
+var stopbutton = document.getElementById("stop");
+var clearbutton = document.getElementById("clear");
