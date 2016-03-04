@@ -1,0 +1,13 @@
+var circle = document.createElementNS("http://www.w3.org/2000/svg", "circle");
+var CX = 640;
+var CY = 318;
+circle.setAttribute("cx", CX);
+circle.setAttribute("cy", CY);
+var radius = 0;
+var growing = 1;
+
+var svg1 = document.getElementByTagName("svg1");
+
+var drawCircle = function(e) {
+    circle
+};
