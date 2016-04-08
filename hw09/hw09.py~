@@ -1,0 +1,12 @@
+#hw09
+
+import time
+
+def wrapper( f ):
+   def inner( *arg ):
+       return f( *arg )
+   return inner
+
+
+#closure = wrapper(foo)
+print time.time()
