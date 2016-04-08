@@ -7,10 +7,10 @@ def wrapper( f ):
       
    def inner( *arg ):
       stime = time.time()
-      z = f( *arg )
+      replacement = f( *arg )
       etime = time.time()
       print f.func_name + " time: " + str(etime - stime)
-      return z
+      return replacement
    
    
    return inner
